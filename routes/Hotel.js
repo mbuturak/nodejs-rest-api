@@ -7,6 +7,7 @@ const router = express.Router();
 router.post('/createHotel', verifyAdmin, createHotel)
 router.put('/updateHotel/:id', verifyAdmin,updateHotel)
 router.delete('/deleteHotel/:id', verifyAdmin,deleteHotel)
+
 router.get('/getAllHotel', getAllHotel)
 router.get('/getSingleHotel/:id', getSingleHotel)
 router.get('/typeByCity', typeByCity)
